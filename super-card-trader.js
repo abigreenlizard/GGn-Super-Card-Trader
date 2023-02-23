@@ -177,8 +177,16 @@ var cards = {
     "Alpaca Out of Nowhere!": "2361",
     "A Red Hot Flamed": "2359",
     "A Wild Artifaxx": "2358",
-    "The Golden Daedy": "2357"
+    "The Golden Daedy": "2357",
+    "Random Staff Card": "2424", 
+    "Three Random Staff Cards": "2427", 
+    "Random Mario Card": "2426", 
+    "Random Lvl2 Staff Card": "2438", 
+    "Random Christmas Card": "2707", 
+    "Random Birthday Card": "2838", 
+    "3 Random Birthday Cards": "2870",
 };
+
 
 var idToNameMap = {}
 Object.keys(cards).forEach( function(cardName){
@@ -202,7 +210,7 @@ Object.keys(cards).forEach( function(cardName){
                 "Zé do Caixão Coffin Joe Card", "LinkinsRepeater Bone Hard Card", "MuffledSilence's Headphones",
             ],
             "Random" : [
-                "Random Staff Card", "Random Lvl2 Staff Card",
+                "Random Staff Card", "Random Lvl2 Staff Card", "Three Random Staff Cards",
             ]
         },
         "Mario": {
@@ -335,7 +343,9 @@ Object.keys(cards).forEach( function(cardName){
                "Supreme Gazelle",
             ],
             "Other": [ ],
-            "Random" : [ ]
+            "Random" : [
+                "Random Birthday Card", "Three Random Birthday Cards",
+             ]
         },
         "Blue After Party": {
             "L1" : [
