@@ -185,6 +185,7 @@ var cards = {
     "Random Christmas Card": "2707", 
     "Random Birthday Card": "2838", 
     "3 Random Birthday Cards": "2870",
+    "Pumpkin Patch": "2596",
 };
 
 
