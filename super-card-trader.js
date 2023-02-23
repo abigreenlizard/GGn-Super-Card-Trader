@@ -411,23 +411,6 @@ Object.keys(cards).forEach( function(cardName){
     }
 };
 
-var found = false
-Object.keys(cards).forEach(function(cardName) {
-    Object.keys(cardCategories).forEach( function(categoryName) {
-        Object.keys(cardCategories[categoryName]).forEach( function(subCat) {
-            var x = 0;
-            Object.keys(cardCategories[categoryName][subCat]).forEach( function(level) {
-                cardCategories[categoryName][subCat][level].forEach(function(cardName2) {
-                    if (cardName == cardName2) found = true;
-
-                });
-            });
-        });
-    });
-    if (!found) console.log("NOT FOUND" + cardName );
-    found = false;
-});
-
 var cardIdToParentMap = {}
 
 Object.keys(cardCategories).forEach( function(categoryName) {
