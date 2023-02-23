@@ -42,7 +42,7 @@ var cards = {
     "Random Portal Card": "2425",
     "Have a Breathtaking Christmas": "3341",
     "Grievous": "3340",
-    "Doomguy ": "3339",
+    "Doomguy": "3339",
     "Mando": "3338",
     "Jurassic Park": "3336",
     "Die Hard": "3335",
@@ -190,7 +190,7 @@ Object.keys(cards).forEach( function(cardName){
         "Staff": {
             "L1" : [
                 "The Golden Daedy", "A Wild Artifaxx", "A Red Hot Flamed", "Alpaca Out of Nowhere!",
-                "thewhale's Kiss", "Stump's Banhammer", "Neo's Ratio Cheats", "Niko's Transormation", "lepik le prick"
+                "thewhale's Kiss", "Stump's Banhammer", "Neo's Ratio Cheats", "Niko's Transformation", "lepik le prick"
             ],
             "L2" : [
                 "The Golden Throne", "The Biggest Banhammer", "The Staff Beauty Parlor",
@@ -222,7 +222,7 @@ Object.keys(cards).forEach( function(cardName){
         },
         "Portal": {
             "L1" : [
-                "Cake", "GLaDOS", "Companion Cube", "Portal Gun", "A Scared Morty", "Rich Sanchez",
+                "Cake", "GLaDOS", "Companion Cube", "Portal Gun", "A Scared Morty", "Rick Sanchez",
                 "Mr. Poopy Butthole", "Nyx class Supercarrier", "Chimera Schematic", "Covetor Mining Ship",
             ],
             "L2" : [
@@ -256,7 +256,7 @@ Object.keys(cards).forEach( function(cardName){
         },
         "Pink Gingerbread": {
             "L1" : [
-                "Gingerbread Kitana", "Gingerbread Marston", "Millenium Falcon", "Gingerbread AT Walker",
+                "Gingerbread Kitana", "Gingerbread Marston", "Millenium Falcon Gingerbread", "Gingerbread AT Walker",
             ],
             "L2" : [
                 "Gingerbread Doomslayer", "Mario Christmas",
@@ -269,7 +269,7 @@ Object.keys(cards).forEach( function(cardName){
         },
         "Red Mafia": {
             "L1" : [
-                "Cyberpunk 2077", "Watch Dog Legion", "Genshin Impact", "Animal Crossing ",
+                "Cyberpunk 2077", "Watch Dogs Legion", "Genshin Impact", "Animal Crossing",
             ],
             "L2" : [
                "Dirt 5", "Gazelle",
@@ -283,7 +283,7 @@ Object.keys(cards).forEach( function(cardName){
         "Green Movie": {
             "L1" : [
                  "Santa Claus Is Out There", "Back to the Future", "Big Lebowski",
-                 "Picard", "Braveheart", "Indy", "Gremlins", "Die Hard, Jurassic Park",
+                 "Picard", "Braveheart", "Indy", "Gremlins", "Die Hard", "Jurassic Park",
             ],
             "L2" : [
                 "Mando", "Doomguy", "Grievous",
@@ -382,7 +382,7 @@ Object.keys(cards).forEach( function(cardName){
         },
         "Cupcakes": {
             "L1" : [
-                "Bloody Mario, Mommy's Recipe", "Link was here!", "Gohma Sees You",
+                "Bloody Mario", "Mommy's Recipe", "Link was here!", "Gohma Sees You",
             ],
             "L2" : [
                 "Memory Boost", "Skultilla the Cake Guard",
@@ -396,7 +396,7 @@ Object.keys(cards).forEach( function(cardName){
         },
         "Ghosts": {
             "L1" : [
-                "Blinky", "Cylde", "Pinky", "Inky",
+                "Blinky", "Clyde", "Pinky", "Inky",
             ],
             "L2" : [
                  "Ghostbusters", "Boo",
@@ -410,6 +410,23 @@ Object.keys(cards).forEach( function(cardName){
         },
     }
 };
+
+var found = false
+Object.keys(cards).forEach(function(cardName) {
+    Object.keys(cardCategories).forEach( function(categoryName) {
+        Object.keys(cardCategories[categoryName]).forEach( function(subCat) {
+            var x = 0;
+            Object.keys(cardCategories[categoryName][subCat]).forEach( function(level) {
+                cardCategories[categoryName][subCat][level].forEach(function(cardName2) {
+                    if (cardName == cardName2) found = true;
+
+                });
+            });
+        });
+    });
+    if (!found) console.log("NOT FOUND" + cardName );
+    found = false;
+});
 
 var cardIdToParentMap = {}
 
