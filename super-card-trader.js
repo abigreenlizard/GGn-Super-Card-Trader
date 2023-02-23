@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Extended filtering for trading cards on trade screen.
 // @author       abigreenlizard
-// @match        https://gazellegames.net/user.php?action=trade
+// @match        https://gazellegames.net/user.php?action=trade&userid=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=gazellegames.net
 // @require https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/perfect-scrollbar.jquery.js
 // @resource IMPORTED_CSS https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.css
