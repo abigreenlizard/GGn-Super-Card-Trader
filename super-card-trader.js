@@ -388,8 +388,7 @@ Object.keys(cards).forEach( function(cardName){
                  "Lame Pumpkin Trio",
             ],
             "Other": [ ],
-            "Random" : [ ]
-
+            "Random" : [ "Pumpkin Patch", ]
         },
         "Cupcakes": {
             "L1" : [
