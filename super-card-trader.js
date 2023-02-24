@@ -6,8 +6,6 @@
 // @author       abigreenlizard
 // @match        https://gazellegames.net/user.php?action=trade&userid=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=gazellegames.net
-// @require https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/perfect-scrollbar.jquery.js
-// @resource IMPORTED_CSS https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/css/perfect-scrollbar.css
 // @grant        none
 // ==/UserScript==
 
@@ -666,7 +664,8 @@ function doAddListForCategory( category, onHand, catsOnHand ) {
     //    '</ul></div>');
     $('#main-card-list').append('<li style="{margin: 0; padding: 0;}"' + ' class="topCat">' + //class="my-list-2 ps-child ps-theme-default ps-active expandableCollapsibleDiv">' +
         //'<img src="Image/up-arrow.jpg" />' +
-        '<a style="{color: black;margin: 0px;padding: 0px;font-size: 100px;}" class="topCatTitle">' + category + '</a></li>');// +
+        '<div class="expandableCollapsibleDiv"><a style="{color: black;margin: 0px;padding: 0px;font-size: 100px;}" class="topCatTitle">' + category + '</a>' + 
+        '<ul style="{display: none;}" id="' + category + 'Ul"></ul></div></li>');// +
     //$('#sub-cat-wrapper').append( '<div style="display: none" class="ps-child my-list my-list-two ps-theme-default"><ul id=' + category +
     //    //' class="cardCategory">' +  //ps-container ps-theme-default ps-active-y ui-droppable">' +
     //    '></ul></div>');
@@ -688,7 +687,7 @@ function doAddListForCategory( category, onHand, catsOnHand ) {
     var noCardsOnHandForSubCat = 0;
     //$('#' + category).append('<li id="li' + subCat.split(" ")[0] + '" class="' + subCat + '"></li>');
     //$('#' + category).append('<li id="li' + subCat.split(" ")[0] + '"><h3 class="subCatTitle">' + subCat + '</h3></li>');
-    $('#main-card-list').append('<li class="subCat" id="li' + subCat.split(" ")[0] + '"><a style="{font-size: smaller;}"class="subCatTitle">--   ' + subCat + '</a></li>');
+    $('#' + category + 'Ul').append('<li class="subCat" id="li' + subCat.split(" ")[0] + '"><a style="{font-size: smaller;}"class="subCatTitle">--   ' + subCat + '</a></li>');
     var levels = cardCategories[category][subCat];
     console.log(onHand);
     console.log('#li' + subCat);
@@ -894,21 +893,37 @@ $('.subCat').css({
 //                 "display": "block",});
                 //"float": "left"});
    // $(".card div").css("{margin-top: -10px;}");
-     $(".expandableCollapsibleDiv > h3").click(function (e) {
-      //var showElementDescription =
-      //  $(this).parent(".expandableCollapsibleDiv").children("ul");
+     //$(".expandableCollapsibleDiv > h3").click(function (e) {
+    function toggleCollapse (category) {
+    //var showElementDescription =
+    //  $(this).parent(".expandableCollapsibleDiv").children("ul");
 
-      //if ($(showElementDescription).is(":visible")) {
-      //  showElementDescription.hide("fast", "swing");
-      // // $(this).attr("src", "Image/up-arrow.jpg");
-      //} else {
-      //  showElementDescription.show("fast", "swing");
-      ////  $(this).attr("src", "Image/down-arrow.jpg");
-      //}
-    });
+        $(".topCatTitle").parent(".expandableCollapsibleDiv").children("ul").each( function(i, ul) {
+            if ($(ul).attr("id") == (category + "Ul")) {
+                if ($(ul).is(":visible")) {
+                $(ul).hide("fast", "swing");
+                // $(this).attr("src", "Image/up-arrow.jpg");
+                } else {
+                $(ul).show("fast", "swing");
+                }
+                //  $(this).attr("src", "Image/down-arrow.jpg");
+            } else {
+                $(ul).hide();
+            }
+        });
+    //if ($(showElementDescription).is(":visible")) {
+    //showElementDescription.hide("fast", "swing");
+    //// $(this).attr("src", "Image/up-arrow.jpg");
+    //} else {
+    //showElementDescription.show("fast", "swing");
+    ////  $(this).attr("src", "Image/down-arrow.jpg");
+    //}
+}
      //$(".topCat > div > h3").click(function (e) {
      $(".topCatTitle").click(function (e) {
+        //toggleCollapse($(this).parent(".expandableCollapsibleDiv").children("ul"));
         var category = $(this).html()
+        toggleCollapse(category);
         var x = 0;
         $('#main-items-wrapper li').each( function(i, li) {
             var itemId = $(li).attr('data-item');
@@ -1045,4 +1060,8 @@ $('.subCat').css({
     //$("#trading-cards").scrollbox();
     //$('#hide-cards').prop("checked", true);
     //hideCardsFromMainWindow();
+    console.log("test update");
+    $(".topCatTitle").parent(".expandableCollapsibleDiv").children("ul").each( function(i, ul) {
+        $(ul).hide();
+    })
 })();
