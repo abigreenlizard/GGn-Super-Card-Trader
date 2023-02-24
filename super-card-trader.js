@@ -610,6 +610,9 @@ $('#controls').append('<div><input id="reset" class="ui-button ui-widget ui-corn
 $('#reset').on( "click", function() {
     $('#main-items-wrapper li').each( function(i, li) {
         $(li).show();
+        $(".topCatTitle").parent(".expandableCollapsibleDiv").children("ul").each( function(i, ul) {
+            $(ul).hide();
+        })
     });
 });
 ////$('#trading-cards').append('<div><h3>Trading Cards</h3></div>');
@@ -1062,7 +1065,6 @@ $('.subCat').css({
     //$("#trading-cards").scrollbox();
     //$('#hide-cards').prop("checked", true);
     //hideCardsFromMainWindow();
-    console.log("test update");
     $(".topCatTitle").parent(".expandableCollapsibleDiv").children("ul").each( function(i, ul) {
         $(ul).hide();
     })
