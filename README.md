@@ -6,4 +6,4 @@ Click a card category (e.e., "Valentines") from the list to show only those card
 
 To install, copy/paste the script text into a new tampermonkey script. Then open a trading page with any user, click the tampermonkey extension button to make sure the new script is enabled, and then open a trading page with any user.
 
-![Alt text](card-trader.png?raw=true "Optional Title")
+![Alt text](traderScreen1.png?raw=true "SCT screenshot")
