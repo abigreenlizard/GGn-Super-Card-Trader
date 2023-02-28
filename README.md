@@ -2,7 +2,7 @@
 
 Adds card filtering controls to the trade screen.
 
-To install, copy/paste the script text into a new tampermonkey script. Then open a trading page with any user, click the tampermonkey extension button to make sure the new script is enabled, and then open a trading page with any user.
+To install, open the TamperMonkey dashboard and paste the [raw github link](https://raw.githubusercontent.com/abigreenlizard/GGn-Super-Card-Trader/main/super-card-trader.js) into Utilities -> Import From URL. Then open the script from the Installed Userscripts tab, click Settings, and paste the same URL into "Update URL". Make sure the "Check For Updates" box is checked, then click Save.
 
 In this screenshot we are filtering in only cards that are in the "Pink Vday" sub-category:
 ![Alt text](traderScreen1.png?raw=true "SCT screenshot")
