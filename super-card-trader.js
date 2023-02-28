@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Super Card Trader
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      1.0
 // @description  Extended filtering for trading cards on trade screen.
 // @author       abigreenlizard
 // @match        https://gazellegames.net/user.php?action=trade&userid=*
