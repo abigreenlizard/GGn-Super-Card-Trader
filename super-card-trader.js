@@ -196,24 +196,6 @@ Object.keys(cards).forEach( function(cardName){
 
     var cardCategories = {
     "Original" : {
-        "Staff": {
-            "L1" : [
-                "The Golden Daedy", "A Wild Artifaxx", "A Red Hot Flamed", "Alpaca Out of Nowhere!",
-                "thewhale's Kiss", "Stump's Banhammer", "Neo's Ratio Cheats", "Niko's Transformation", "lepik le prick"
-            ],
-            "L2" : [
-                "The Golden Throne", "The Biggest Banhammer", "The Staff Beauty Parlor",
-            ],
-            "L3": [
-                "The Realm of Staff",
-            ],
-            "Other": [
-                "Zé do Caixão Coffin Joe Card", "LinkinsRepeater Bone Hard Card", "MuffledSilence's Headphones",
-            ],
-            "Random" : [
-                "Random Staff Card", "Random Lvl2 Staff Card", "Three Random Staff Cards",
-            ]
-        },
         "Mario": {
             "L1" : [
                 "Mario", "Luigi", "Princess Peach", "Toad", "Yoshi", "Bowser", "Goomba", "Koopa Troopa", "Wario",
@@ -245,6 +227,24 @@ Object.keys(cards).forEach( function(cardName){
                 "Random Portal Card",
             ]
         },
+        "Staff": {
+            "L1" : [
+                "The Golden Daedy", "A Wild Artifaxx", "A Red Hot Flamed", "Alpaca Out of Nowhere!",
+                "thewhale's Kiss", "Stump's Banhammer", "Neo's Ratio Cheats", "Niko's Transformation", "lepik le prick"
+            ],
+            "L2" : [
+                "The Golden Throne", "The Biggest Banhammer", "The Staff Beauty Parlor",
+            ],
+            "L3": [
+                "The Realm of Staff",
+            ],
+            "Other": [
+                "Zé do Caixão Coffin Joe Card", "LinkinsRepeater Bone Hard Card", "MuffledSilence's Headphones",
+            ],
+            "Random" : [
+                "Random Staff Card", "Random Lvl2 Staff Card", "Three Random Staff Cards",
+            ]
+        },
     },
     "Christmas": {
         "Classic Cheer" : {
@@ -262,6 +262,20 @@ Object.keys(cards).forEach( function(cardName){
             "Random" : [
                 "Random Christmas Card",
             ]
+        },
+        "Green Movie": {
+            "L1" : [
+                 "Santa Claus Is Out There", "Back to the Future", "Big Lebowski",
+                 "Picard", "Braveheart", "Indy", "Gremlins", "Die Hard", "Jurassic Park",
+            ],
+            "L2" : [
+                "Mando", "Doomguy", "Grievous",
+            ],
+            "L3": [
+                "Have a Breathtaking Christmas",
+            ],
+            "Other": [ ],
+            "Random" : [ ]
         },
         "Pink Gingerbread": {
             "L1" : [
@@ -289,35 +303,8 @@ Object.keys(cards).forEach( function(cardName){
             "Other": [ ],
             "Random" : [ ]
         },
-        "Green Movie": {
-            "L1" : [
-                 "Santa Claus Is Out There", "Back to the Future", "Big Lebowski",
-                 "Picard", "Braveheart", "Indy", "Gremlins", "Die Hard", "Jurassic Park",
-            ],
-            "L2" : [
-                "Mando", "Doomguy", "Grievous",
-            ],
-            "L3": [
-                "Have a Breathtaking Christmas",
-            ],
-            "Other": [ ],
-            "Random" : [ ]
-        },
     },
     "Valentines": {
-        "Pink Vday": {
-            "L1" : [
-                "Sonic and Amy", "Yoshi and Birdo", "Aerith and Cloud", "Master Chief and Cortana",
-            ],
-            "L2" : [
-                 "Kirlia and Meloetta", "Dom and Maria",
-            ],
-            "L3": [
-                "Mr. and Mrs. Pac Man",
-            ],
-            "Other": [ ],
-            "Random" : [ ]
-        },
         "Brown Vday": {
             "L1" : [
                 "Chainsaw Chess", "Chainsaw Wizard", "Ivy Valentine", "Jill Valentine",
@@ -331,23 +318,21 @@ Object.keys(cards).forEach( function(cardName){
             "Other": [ ],
             "Random" : [ ]
         },
-    },
-    "Birthday": {
-        "Tan Gazelles": {
+        "Pink Vday": {
             "L1" : [
-                "Ripped Gazelle", "Gamer Gazelle", "Fancy Gazelle",
+                "Sonic and Amy", "Yoshi and Birdo", "Aerith and Cloud", "Master Chief and Cortana",
             ],
             "L2" : [
-                "Future Gazelle", "Alien Gazelle", "Lucky Gazelle",
+                 "Kirlia and Meloetta", "Dom and Maria",
             ],
             "L3": [
-               "Supreme Gazelle",
+                "Mr. and Mrs. Pac Man",
             ],
             "Other": [ ],
-            "Random" : [
-                "Random Birthday Card", "Three Random Birthday Cards",
-             ]
+            "Random" : [ ]
         },
+    },
+    "Birthday": {
         "Blue After Party": {
             "L1" : [
                 "Exodus Truce", "Gazelle Breaking Bad", "Home Sweet Home", "Birthday Battle Kart",
@@ -375,21 +360,23 @@ Object.keys(cards).forEach( function(cardName){
             "Other": [ ],
             "Random" : [ ]
         },
-    },
-    "Halloween": {
-        "Pumpkins": {
+        "Tan Gazelles": {
             "L1" : [
-                 "Rotting Pumpkin", "Carved Pumpkin", "Ripe Pumpkin",
+                "Ripped Gazelle", "Gamer Gazelle", "Fancy Gazelle",
             ],
             "L2" : [
-                "Stormrage Pumpkin", "Russian Pumpkin", "Green Mario Pumpkin",
+                "Future Gazelle", "Alien Gazelle", "Lucky Gazelle",
             ],
             "L3": [
-                 "Lame Pumpkin Trio",
+               "Supreme Gazelle",
             ],
             "Other": [ ],
-            "Random" : [ "Pumpkin Patch", ]
+            "Random" : [
+                "Random Birthday Card", "Three Random Birthday Cards",
+             ]
         },
+    },
+    "Halloween": {
         "Cupcakes": {
             "L1" : [
                 "Bloody Mario", "Mommy's Recipe", "Link was here!", "Gohma Sees You",
@@ -418,6 +405,19 @@ Object.keys(cards).forEach( function(cardName){
             "Random" : [ ]
 
         },
+        "Pumpkins": {
+            "L1" : [
+                 "Rotting Pumpkin", "Carved Pumpkin", "Ripe Pumpkin",
+            ],
+            "L2" : [
+                "Stormrage Pumpkin", "Russian Pumpkin", "Green Mario Pumpkin",
+            ],
+            "L3": [
+                 "Lame Pumpkin Trio",
+            ],
+            "Other": [ ],
+            "Random" : [ "Pumpkin Patch", ]
+        },
     }
 };
 
@@ -428,7 +428,7 @@ Object.keys(cardCategories).forEach( function(categoryName) {
         var x = 0;
         Object.keys(cardCategories[categoryName][subCat]).forEach( function(level) {
             cardCategories[categoryName][subCat][level].forEach( function(card) {
-                console.log(card);
+                //console.log(card);
                 var cardId = cards[card];
                 var newObj = {
                     "Category": categoryName,
@@ -436,8 +436,8 @@ Object.keys(cardCategories).forEach( function(categoryName) {
                     "Level": level,
                     "Name": card
                 };
-                console.log(cardId);
-                console.log(newObj);
+                //console.log(cardId);
+                //console.log(newObj);
                 cardIdToParentMap[cardId] = newObj;
             });
         //  console.log(level);
@@ -446,46 +446,42 @@ Object.keys(cardCategories).forEach( function(categoryName) {
 });
 console.log( cardCategories["Original"]["Mario"]["L1"][0]);
 
-//var itemsList = $('#main-items-wrapper').children("li").detach();
+var itemsList = $('#main-items-wrapper').children("li").detach();
 //$('#main-items-wrapper').append(itemsList);
 var nonCards = [];
 var vCards = [];
-$('#main-items-wrapper').children("li").each( function(i, li) {
+itemsList.each( function(i, li) {
     var itemId = $(li).attr('data-item');
-    console.log(itemId);
+    //console.log(itemId);
     var isCard = (typeof idToNameMap[itemId] == "string");
     if (isCard) {
         vCards.push( li );
+        var cardInfo = cardIdToParentMap[itemId];
+        console.log(cardInfo["Name"] + "  " + cardInfo["Category"] +
+                    "   " + cardInfo["SubCat"] + "   " + cardInfo["Level"]);
     } else {
         nonCards.push(li)
     }
 });
 console.log("NON CARDS!!!");
-console.log(nonCards);
-console.log(vCards);
+//console.log(nonCards);
+//console.log(vCards);
 vCards.sort(function(a,b) {
     console.log(a + '   ' + b );
     var aId = $(a).attr("data-item");
-    var bId = $(a).attr("data-item");
+    var bId = $(b).attr("data-item");
     var aCardInfo = cardIdToParentMap[aId];
     var bCardInfo = cardIdToParentMap[bId];
-    if (aCardInfo['Category'] == bCardInfo['Category']) {
-        if (aCardInfo['SubCat'] == bCardInfo['SubCat']) {
-            if (aCardInfo['Level'] == bCardInfo['Level']) {
-                return aCardInfo['Name'] > bCardInfo['Name'] ? 1 : -1;
-            } else {
-                return aCardInfo['Level'] > bCardInfo['Level'] ? 1 : -1;
-            }
-        } else {
-            return aCardInfo['SubCat'] > bCardInfo['SubCat'] ? 1 : -1;
-        }
-    } else {
-        return aCardInfo['Category'] > bCardInfo['Category'] ? 1 : -1;
-    }
+    return ( aCardInfo['Category'].localeCompare(bCardInfo['Category']) ||
+             aCardInfo['SubCat'].localeCompare(bCardInfo['SubCat']) ||
+             aCardInfo['Level'].localeCompare(bCardInfo['Level']) ||
+             aCardInfo['Name'].localeCompare(bCardInfo['Name'])
+    );
 });
 
 //console.log(vCards);
-nonCards = nonCards.concat(vCards.reverse());
+//nonCards = nonCards.concat(vCards.reverse());
+nonCards = nonCards.concat(vCards);
 $('#main-items-wrapper').append(nonCards);
 
 
@@ -549,23 +545,6 @@ console.log("BUILT CATS ON HAND");
 
 
 
-
- class Book_button {
-        constructor(book_name, bgcolor, tcolor) {
-            this.enabled = DEFAULT[book_name] ;
-            $("#trading-cards").append('<button style="margin-top:3px;margin-right:5px;background-color: green;" id="' + book_name + '" class="quick_craft_button">'+ book_name.replace(/_/g," ") +'</button>');
-            document.getElementById(book_name).style.backgroundColor=button_color[this.enabled];
-            document.getElementById(book_name).bgcolor = bgcolor;
-            document.getElementById(book_name).tcolor = tcolor;
-            $("#"+ book_name).click(() => {
-                this.enabled = 1 - this.enabled;
-                console.log(document.getElementById(book_name));
-                document.getElementById(book_name).style.backgroundColor=button_color[this.enabled];
-                var buttons = document.getElementsByClassName("qcbutton_" + book_name);
-                for (var i = 0; i < buttons.length; i++) {buttons[i].style.display = button_display[this.enabled]};
-            });
-        }
-    }
 
 // MAIN BEGIN!!
 
@@ -916,20 +895,14 @@ $('.subCat').css({
                 $(ul).hide();
             }
         });
-    //if ($(showElementDescription).is(":visible")) {
-    //showElementDescription.hide("fast", "swing");
-    //// $(this).attr("src", "Image/up-arrow.jpg");
-    //} else {
-    //showElementDescription.show("fast", "swing");
-    ////  $(this).attr("src", "Image/down-arrow.jpg");
-    //}
-}
+    }
      //$(".topCat > div > h3").click(function (e) {
      $(".topCatTitle").click(function (e) {
         //toggleCollapse($(this).parent(".expandableCollapsibleDiv").children("ul"));
         var category = $(this).html()
         toggleCollapse(category);
         var x = 0;
+        // update trade panel
         $('#main-items-wrapper li').each( function(i, li) {
             var itemId = $(li).attr('data-item');
             //console.log(itemId);
@@ -947,12 +920,6 @@ $('.subCat').css({
             }
             $(li).show();
 
-        //var current = $('#main-card-list').attr('data-item');
-        //var newSubCat = $(this).find('a').html();
-        //$('#main-card-list').attr('data-item', newSubCat.split(" ")[0]);
-        //$('#' + current ).parent().hide();
-        //$('#' + newSubCat ).parent().show();
-        //console.log("CLICK");
         });
     });
 
@@ -977,16 +944,9 @@ $('.subCat').css({
                 return;
             }
             $(li).show();
-        //var topCat = $(this).parent().parent().attr("id");
-        //var cardsId = topCat + $(this).html() + 'cards';
-        //var cards = $('#' + cardsId );
-        //if (cards.is(":visible")) {
-        //    cards.hide();
-        //} else {
-        //    cards.show();
-        //}
     });
 });
+
     //$(".my-list").css( {
     //});
     //$(".my-list-2").css( {
@@ -1068,4 +1028,5 @@ $('.subCat').css({
     $(".topCatTitle").parent(".expandableCollapsibleDiv").children("ul").each( function(i, ul) {
         $(ul).hide();
     })
+    console.log("new test env 4");
 })();
